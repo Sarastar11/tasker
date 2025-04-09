@@ -1,0 +1,422 @@
+.navbar_container {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #ffffff;
+    height: 59px;
+    padding: 10px 10px 20px 49px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_home_img {
+    width: 49px;
+    height: 43px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_link {
+    color: rgba(0, 149, 78, 1) !important;
+    margin: 0 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav_search {
+    width: 466px;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: white;
+    padding-left: 35px;
+    font-size: 14px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    background-image: url('../../assets/icons/search.png');
+    background-repeat: no-repeat;
+    background-position: left 10px center;
+}
+
+.nav_search::placeholder {
+    color: #999;
+    padding-left: 20px;
+}
+
+.nav_btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.login_btn {
+    width: 101px;
+    height: 38px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background: rgba(0, 140, 73, 1);
+    color: #ffffff;
+    border: none;
+}
+
+.worker_btn {
+    border: 1px solid rgba(0, 140, 73, 1);
+    color: rgba(0, 140, 73, 1);
+    background: #ffffff;
+    width: 132px;
+    height: 38px;
+    border-radius: 4px;
+}
+
+.flag_icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.language_selector {
+    display: flex;
+    align-items: center;
+}
+
+.language_dropdown {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    color: #333;
+}
+
+.language_dropdown option {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger_line {
+    width: 100%;
+    height: 3px;
+    background: rgba(0, 140, 73, 1);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Desktop Styles (769px and above) */
+@media (min-width: 769px) {
+    .nav_list {
+        display: flex;
+    }
+
+    .nav_search {
+        display: block;
+    }
+
+    .nav_btns {
+        display: flex;
+    }
+
+    .language_selector {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+
+    .nav_list_open {
+        display: flex;
+    }
+
+    .mobile_nav_btns,
+    .mobile_language_selector {
+        display: none !important;
+    }
+}
+
+/* Medium Screens (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar_container {
+        padding: 8px 15px;
+        height: 50px;
+    }
+
+    .nav_home_img {
+        width: 40px;
+        height: 35px;
+    }
+
+    .nav_list {
+        display: flex;
+    }
+
+    .nav_link {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .nav_search {
+        display: block;
+        width: 300px;
+        height: 34px;
+        font-size: 12px;
+        padding-left: 30px;
+        background-position: left 8px center;
+    }
+
+    .nav_btns {
+        display: flex;
+        gap: 8px;
+    }
+
+    .worker_btn {
+        width: 110px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .login_btn {
+        width: 90px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .flag_icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .language_selector {
+        display: flex;
+        font-size: 14px;
+    }
+
+    .language_dropdown {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+
+    .mobile_nav_btns,
+    .mobile_language_selector {
+        display: none !important;
+    }
+}
+
+/* Mobile Styles (768px and below) */
+@media (max-width: 768px) {
+    .navbar_container {
+        padding: 10px 15px;
+        height: 50px;
+    }
+
+    .nav_home_img {
+        width: 40px;
+        height: 35px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav_list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_list_open {
+        display: flex;
+    }
+
+    .nav_link {
+        margin: 10px 0;
+        font-size: 16px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .nav_search {
+        display: none;
+    }
+
+    .nav_btns {
+        display: none;
+    }
+
+    .language_selector {
+        display: none;
+    }
+
+    /* Mobile Menu Buttons */
+    .mobile_nav_btns {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 20px;
+        align-items: stretch;
+    }
+
+    .mobile_nav_btns .login_btn {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        background: rgba(0, 140, 73, 1);
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .mobile_nav_btns .signup_link {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 10px 0;
+    }
+
+    .mobile_nav_btns .signup_link:hover {
+        text-decoration: underline;
+    }
+
+    .mobile_nav_btns .worker_btn {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        background: #ffffff;
+        color: rgba(0, 140, 73, 1);
+        border: 1px solid rgba(0, 140, 73, 1);
+        border-radius: 5px;
+    }
+
+    /* Mobile Language Selector */
+    .mobile_language_selector {
+        margin: 15px 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_language_selector .language_dropdown {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #ffffff;
+    }
+
+    .mobile_language_selector .flag_icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+/* Smaller Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .navbar_container {
+        padding: 8px 10px;
+        height: 45px;
+    }
+
+    .nav_home_img {
+        width: 35px;
+        height: 30px;
+    }
+
+    .hamburger {
+        width: 25px;
+        height: 18px;
+    }
+
+    .hamburger_line {
+        height: 2px;
+    }
+
+    .nav_list {
+        top: 45px;
+        padding: 10px 0;
+    }
+
+    .nav_link {
+        font-size: 14px;
+        margin: 8px 0;
+        padding-left: 15px;
+    }
+
+    .mobile_nav_btns {
+        margin: 10px 15px;
+        gap: 8px;
+    }
+
+    .mobile_nav_btns .login_btn,
+    .mobile_nav_btns .worker_btn {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .mobile_nav_btns .signup_link {
+        font-size: 12px;
+        margin: 8px 0;
+    }
+
+    .mobile_language_selector {
+        margin: 10px 15px;
+    }
+
+    .mobile_language_selector .language_dropdown {
+        font-size: 14px;
+    }
+
+    .mobile_language_selector .flag_icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+    }
+}

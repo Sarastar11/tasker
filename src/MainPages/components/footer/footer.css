@@ -1,0 +1,59 @@
+.footer_container
+{
+    padding: 40px 80px 24px 80px;
+    background: #282828;
+    color: #ffffff;
+}
+.footer_content
+{
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.footer_logo_img
+{
+    width: 107px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.footer_contacts{
+    width: 323px;
+}
+.footer_contact_head
+{
+    font-size: 24px;
+    font-weight: 400;
+}
+.contact_number , .contact_text , .contact_email , .footer_link
+{
+    color: #A5B6BD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  
+    margin: 20px 0;
+}
+.footer_links , .footer_social_links
+{
+   
+    margin: 50px 0 50px 50px;
+}
+.footer_links_list
+{
+    list-style: none;
+    flex-direction: column;
+    padding-left: 0px;
+}
+.footer_link
+{
+    margin: 40px 0;
+}
+.app_imgGallery
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

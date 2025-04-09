@@ -1,0 +1,525 @@
+.contact_container {
+    padding: 93px 90px 50px 170px;
+    margin: 0 auto;
+}
+
+.contact_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+    height: 274px;
+}
+
+.contact_img_field {
+    width: 435px;
+    height: 274px;
+    padding: 0 60px 0 60px;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(179, 218, 164, 0.794473) 0%, rgba(255, 255, 255, 0) 42.1%, #9FD08C 100%);
+}
+
+.contact_img {
+    height: 274px;
+}
+
+.contact_text {
+    text-align: left;
+    height: 274px;
+}
+
+.contact_head {
+    text-align: left;
+    font-size: 50px;
+    font-weight: 700;
+    color: rgba(13, 122, 95, 1);
+}
+
+.contact_description_text {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+hr {
+    margin: 20px 0;
+    padding: 2px 0;
+    background: #b4b2b2;
+}
+
+.contactUs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.social_links {
+    width: 300px;
+    text-align: left;
+}
+
+.contactUs_title,
+.contactUs_bio,
+.contact_address {
+    margin: 20px 0;
+}
+
+.contactUs_title {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.contact_address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.contact_icon {
+    width: 25px;
+    height: 25px;
+    background: rgba(226, 232, 255, 1);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.socialLinks_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    margin: 10px 0;
+}
+
+.social_link {
+    margin: 10px;
+}
+
+.socialLink_img {
+    width: 25px;
+    height: 25px;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.client_info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.client_data {
+    width: 150%;
+    height: 50px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(232, 231, 234, 1);
+    outline: none;
+    padding: 8px;
+}
+
+.contact_message {
+    padding-top: 130px;
+}
+
+.message_input {
+    margin-top: 5px;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid rgba(232, 231, 234, 1);
+    outline: none;
+    padding: 10px;
+}
+
+.terms_of_use {
+    width: 100%;
+    display: block;
+}
+
+.term_of_use {
+    display: flex;
+    gap: 5px;
+}
+
+.term_of_use span {
+    font-weight: 700;
+}
+
+.contact_btn {
+    padding: 8px 12px;
+    width: 195px;
+    height: 38px;
+    color: rgba(0, 149, 78, 1);
+    border: 1px solid rgba(0, 149, 78, 1);
+    background-color: transparent;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.liveSupport_btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.liveSupport_btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.3);
+}
+
+.liveSupport_img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 149, 78, 1);
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    top: auto;
+    left: auto;
+    z-index: 9999;
+    object-fit: contain;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.liveSupport_img:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 128, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .contact_container {
+        padding: 60px 40px 40px 60px;
+    }
+
+    .contact_description {
+        gap: 40px;
+        height: auto;
+    }
+
+    .contact_img_field {
+        width: 350px;
+        height: 220px;
+        padding: 0 40px;
+    }
+
+    .contact_img {
+        height: 220px;
+    }
+
+    .contact_text {
+        height: auto;
+    }
+
+    .contact_head {
+        font-size: 40px;
+    }
+
+    .contact_description_text {
+        font-size: 20px;
+    }
+
+    hr {
+        margin: 15px 0;
+    }
+
+    .contactUs {
+        gap: 8px;
+    }
+
+    .social_links {
+        width: 250px;
+    }
+
+    .contactUs_title {
+        font-size: 20px;
+    }
+
+    .contactUs_title,
+    .contactUs_bio,
+    .contact_address {
+        margin: 15px 0;
+    }
+
+    .contact_icon {
+        width: 22px;
+        height: 22px;
+        padding: 4px;
+    }
+
+    .social_link {
+        margin: 8px;
+    }
+
+    .socialLink_img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .contact_form {
+        gap: 10px;
+    }
+
+    .client_info {
+        margin-left: 50px;
+    }
+
+    .client_data {
+        width: 100%; /* Fix overflow issue */
+        height: 45px;
+        margin: 4px 0;
+        padding: 6px;
+    }
+
+    .contact_message {
+        padding-top: 100px;
+    }
+
+    .message_input {
+        height: 250px;
+        padding: 8px;
+    }
+
+    .contact_btn {
+        width: 170px;
+        height: 34px;
+        padding: 6px 10px;
+    }
+
+    .liveSupport_img {
+        width: 28px;
+        height: 28px;
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact_container {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .contact_description {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .contact_img_field {
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .contact_img {
+        height: 180px;
+    }
+
+    .contact_text {
+        text-align: center;
+    }
+
+    .contact_head {
+        font-size: 32px;
+    }
+
+    .contact_description_text {
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 10px 0;
+    }
+
+    .contactUs {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social_links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactUs_title {
+        font-size: 18px;
+    }
+
+    .contactUs_title,
+    .contactUs_bio,
+    .contact_address {
+        margin: 10px 0;
+    }
+
+    .contact_address {
+        justify-content: center;
+    }
+
+    .contact_icon {
+        width: 20px;
+        height: 20px;
+        padding: 3px;
+    }
+
+    .socialLinks_list {
+        justify-content: center;
+    }
+
+    .social_link {
+        margin: 6px;
+    }
+
+    .socialLink_img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact_form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .client_info {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .client_data {
+        height: 40px;
+        padding: 5px;
+    }
+
+    .contact_message {
+        padding-top: 0;
+    }
+
+    .message_input {
+        height: 200px;
+        padding: 6px;
+    }
+
+    .terms_of_use {
+        text-align: center;
+    }
+
+    .contact_btn {
+        width: 150px;
+        height: 32px;
+        padding: 5px 8px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .liveSupport_img {
+        width: 26px;
+        height: 26px;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact_container {
+        padding: 30px 15px 20px 15px;
+    }
+
+    .contact_description {
+        gap: 20px;
+    }
+
+    .contact_img_field {
+        max-width: 250px;
+        height: 150px;
+        padding: 0 15px;
+    }
+
+    .contact_img {
+        height: 150px;
+    }
+
+    .contact_head {
+        font-size: 28px;
+    }
+
+    .contact_description_text {
+        font-size: 14px;
+    }
+
+    hr {
+        margin: 8px 0;
+    }
+
+    .contactUs {
+        gap: 15px;
+    }
+
+    .contactUs_title {
+        font-size: 16px;
+    }
+
+    .contactUs_title,
+    .contactUs_bio,
+    .contact_address {
+        margin: 8px 0;
+    }
+
+    .contact_icon {
+        width: 18px;
+        height: 18px;
+        padding: 2px;
+    }
+
+    .social_link {
+        margin: 5px;
+    }
+
+    .socialLink_img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .client_data {
+        height: 35px;
+        padding: 4px;
+    }
+
+    .message_input {
+        height: 150px;
+        padding: 5px;
+    }
+
+    .contact_btn {
+        width: 130px;
+        height: 30px;
+        padding: 4px 6px;
+    }
+
+    .liveSupport_img {
+        width: 24px;
+        height: 24px;
+        bottom: 30px;
+        right: 30px;
+    }
+}

@@ -1,0 +1,115 @@
+.payment-container {
+    max-width: 722px;
+    margin: auto;
+    padding-top: 20px;
+   
+  }
+  
+
+  .payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  
+  .payment-method-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 108px;
+    height: 64px;
+    border-radius: 6px;
+    border: 2px solid rgba(224, 224, 224, 1);
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    font-size: 12px;
+    color: rgba(114, 127, 150, 1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 12px;
+  }
+  
+ 
+  .payment-method-btn.active {
+    border-color: rgba(5, 112, 222, 1);
+    color: rgba(5, 112, 222, 1);
+  }
+  
+  
+  .payment-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 5px;
+  }
+  
+  
+  .payment-text {
+    font-weight: 500;
+  }
+  
+  
+  .pay-button {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: rgba(0, 140, 73, 1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+    
+  }
+  
+  .pay-button:hover {
+    background-color: rgba(0, 140, 73, 0.8);
+  }
+  
+  @media (max-width: 768px) {
+    .payment-methods {
+      gap: 5px;
+    }
+  
+    .payment-method-btn {
+      width: 90px;
+      height: 60px;
+      font-size: 10px;
+    }
+  
+    .payment-icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .payment-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .payment-methods {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .payment-method-btn {
+      width: 80px;
+      height: 55px;
+      font-size: 9px;
+    }
+  
+    .pay-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+.MakeOffer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border: 1px solid #e9ebf8;
+    border-radius: 8px;
+    color: #0a2b14;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Cairo";
+  }
+  .OrderDetails,
+  .WorkerDetails,
+  .WorkerOffer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .title {
+      button {
+        background-color: transparent;
+      }
+    }
+  }
+  .status {
+    .statusDetails {
+      p {
+        font-weight: 400;
+        color: #000;
+        opacity: 50%;
+        font-size: 16px;
+      }
+    }
+  }
+  .OrderDate,
+  .Details {
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      color: #282828;
+      width: fit-content;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.ChatsDropDown {
+  height: 584px;
+  width: 375px;
+  padding: 16px 8px;
+  position: absolute;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 2px;
+  top: 50px;
+  right: 20px;
+  overflow-y: scroll;
+  .link {
+    color: blue;
+    text-decoration: underline;
+    size: 12px;
+    display: block;
+    text-align: right;
+    padding-block: 5px;
+  }
+  .chatList {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    .content {
+      h3 {
+        font-size: 12px;
+        font-weight: 700;
+        color: #1f2024;
+      }
+      p {
+        color: #71727a;
+        font-size: 12px;
+      }
+    }
+    .time {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .badge {
+        background-color: #e4914a;
+        padding: 6px;
+        width: 24px;
+        height: 24px;
+        border-radius: 20px;
+      }
+      .hours {
+        color: #bcbcbc;
+        font-size: 8px;
+      }
+    }
+  }
+}

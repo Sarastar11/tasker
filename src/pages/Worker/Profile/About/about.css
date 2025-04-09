@@ -1,0 +1,52 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  button {
+    background-color: #fff;
+    color: #00703a;
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+  .data {
+    p {
+      font-weight: 500;
+      color: #000929;
+      opacity: 50%;
+      line-height: 150%;
+      font-family: "Roboto";
+      text-transform: capitalize;
+    }
+    .subtitle {
+      display: flex;
+      gap: 16px;
+      .flags {
+        display: flex;
+        gap: 16px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        .cards {
+          display: flex;
+          align-items: start;
+          gap: 4px;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .portfolio {
+      align-items: center;
+      gap: 13px;
+      .portfolio-imgs {
+        img {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+  }
+}

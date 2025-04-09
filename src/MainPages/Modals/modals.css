@@ -1,0 +1,529 @@
+.modal_container {
+    width: 600px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    margin: 250px auto;
+    padding: auto;
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+.modal_content {
+    text-align: center;
+    width: 400px;
+    padding: 30px;
+    margin-left: 60px;
+}
+
+.modal_title {
+    font-weight: 700;
+    width: 400px;
+}
+
+.modal_description {
+    width: 400px;
+}
+
+#email_modal {
+    margin-top: 60px;
+}
+
+.modal_button {
+    background: #008C49;
+    color: #ffffff;
+    margin: 40px 0;
+    margin-left: 80px;
+    width: 216px;
+    height: 53px;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    gap: 8px;
+}
+
+.input_group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.login_input {
+    margin: 10px 0;
+    width: 450px;
+    height: 40px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+
+#email_btn {
+    margin-top: 10px;
+}
+
+/* Live Support CSS start */
+/* Overlay for the modal */
+.liveSupport_modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0; /* Changed from right: 0 to ensure full coverage */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9998;
+    display: flex;
+    justify-content: flex-end; /* Keep this for desktop */
+    align-items: flex-end;
+}
+
+/* Main container for the chat modal */
+.liveSupport_container {
+    position: fixed;
+    bottom: 80px; /* Slightly increased to ensure space above the live chat icon */
+    right: 40px;
+    top: auto; /* Remove top constraint for better positioning */
+    left: auto; /* Remove left constraint for better control */
+    width: 300px;
+    max-height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+/* Header */
+.liveSupport_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #000;
+    border-bottom: 1px solid #ddd;
+}
+
+.liveSupport_header h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.liveSupport_closeBtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Privacy Consent */
+.liveSupport_privacy {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+}
+
+.liveSupport_infoIcon {
+    margin-right: 5px;
+    color: #888;
+}
+
+.liveSupport_privacy p {
+    margin: 0;
+}
+
+/* Messages Area */
+.liveSupport_messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+}
+
+.liveSupport_message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.liveSupport_message p {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.liveSupport_timestamp {
+    font-size: 10px;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* Quick Questions */
+.liveSupport_quickQuestions {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.liveSupport_questionBtn {
+    background-color: #e6f4ea;
+    border: 1px solid #28a745;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #28a745;
+    cursor: pointer;
+    text-align: left;
+}
+
+.liveSupport_questionBtn:hover {
+    background-color: #d4edda;
+}
+
+/* WhatsApp Button */
+.liveSupport_whatsapp {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.liveSupport_whatsappBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.liveSupport_whatsappIcon {
+    font-size: 16px;
+}
+
+.liveSupport_whatsappBtn:hover {
+    background-color: #218838;
+}
+
+/* Input Area */
+.liveSupport_inputArea {
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.liveSupport_warning {
+    font-size: 12px;
+    color: #888;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.liveSupport_inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.liveSupport_input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.liveSupport_sendBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.liveSupport_sendBtn:hover {
+    background-color: #218838;
+}
+
+/* Media Queries for Live Support Modal */
+@media (max-width: 1024px) {
+    .liveSupport_modalOverlay {
+        justify-content: center; /* Center the modal on smaller screens */
+        align-items: center;
+    }
+
+    .liveSupport_container {
+        bottom: 60px; /* Adjust to match the live chat icon's new position */
+        right: 30px;
+        width: 280px;
+        max-height: 500px;
+    }
+
+    .liveSupport_header {
+        padding: 8px 12px;
+    }
+
+    .liveSupport_header h3 {
+        font-size: 15px;
+    }
+
+    .liveSupport_closeBtn {
+        font-size: 15px;
+    }
+
+    .liveSupport_privacy {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .liveSupport_messages {
+        padding: 12px;
+    }
+
+    .liveSupport_message p {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .liveSupport_timestamp {
+        font-size: 9px;
+    }
+
+    .liveSupport_quickQuestions {
+        padding: 8px 12px;
+        gap: 6px;
+    }
+
+    .liveSupport_questionBtn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .liveSupport_whatsapp {
+        padding: 8px 12px;
+    }
+
+    .liveSupport_whatsappBtn {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .liveSupport_whatsappIcon {
+        font-size: 14px;
+    }
+
+    .liveSupport_inputArea {
+        padding: 8px 12px;
+    }
+
+    .liveSupport_warning {
+        font-size: 11px;
+    }
+
+    .liveSupport_input {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .liveSupport_sendBtn {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .liveSupport_modalOverlay {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .liveSupport_container {
+        bottom: auto; /* Remove bottom constraint */
+        right: auto; /* Remove right constraint */
+        top: 20px; /* Center vertically */
+        left: 20px; /* Center horizontally */
+        width: 90%; /* Take most of the screen width */
+        max-width: 320px; /* Limit the width */
+        max-height: 80vh; /* Limit the height to 80% of viewport height */
+    }
+
+    .liveSupport_header {
+        padding: 6px 10px;
+    }
+
+    .liveSupport_header h3 {
+        font-size: 14px;
+    }
+
+    .liveSupport_closeBtn {
+        font-size: 14px;
+    }
+
+    .liveSupport_privacy {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    .liveSupport_messages {
+        padding: 10px;
+    }
+
+    .liveSupport_message p {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .liveSupport_timestamp {
+        font-size: 8px;
+    }
+
+    .liveSupport_quickQuestions {
+        padding: 6px 10px;
+        gap: 5px;
+    }
+
+    .liveSupport_questionBtn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .liveSupport_whatsapp {
+        padding: 6px 10px;
+    }
+
+    .liveSupport_whatsappBtn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .liveSupport_whatsappIcon {
+        font-size: 13px;
+    }
+
+    .liveSupport_inputArea {
+        padding: 6px 10px;
+    }
+
+    .liveSupport_warning {
+        font-size: 10px;
+    }
+
+    .liveSupport_input {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    .liveSupport_sendBtn {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 425px) {
+    .liveSupport_container {
+        top: 15px;
+        left: 15px;
+        width: calc(100% - 30px); /* Account for padding */
+        max-width: 280px;
+        max-height: 70vh; /* Further limit the height */
+    }
+
+    .liveSupport_header {
+        padding: 5px 8px;
+    }
+
+    .liveSupport_header h3 {
+        font-size: 13px;
+    }
+
+    .liveSupport_closeBtn {
+        font-size: 13px;
+    }
+
+    .liveSupport_privacy {
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+
+    .liveSupport_messages {
+        padding: 8px;
+    }
+
+    .liveSupport_message p {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+    .liveSupport_timestamp {
+        font-size: 7px;
+    }
+
+    .liveSupport_quickQuestions {
+        padding: 5px 8px;
+        gap: 4px;
+    }
+
+    .liveSupport_questionBtn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .liveSupport_whatsapp {
+        padding: 5px 8px;
+    }
+
+    .liveSupport_whatsappBtn {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .liveSupport_whatsappIcon {
+        font-size: 12px;
+    }
+
+    .liveSupport_inputArea {
+        padding: 5px 8px;
+    }
+
+    .liveSupport_warning {
+        font-size: 9px;
+    }
+
+    .liveSupport_input {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+    .liveSupport_sendBtn {
+        width: 24px;
+        height: 24px;
+    }
+}
+/* Live Support CSS End */

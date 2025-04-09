@@ -1,0 +1,724 @@
+/* Reset default margins and padding for the body to eliminate potential gaps */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the parent container (if any) doesn't add unwanted spacing */
+.servicesHeaderBox {
+    color: #ffffff;
+    width: 100%;
+    max-width: 1440px;
+    height: 598px;
+    padding: 20px 50px;
+    margin: 0 auto; /* Centers the content box within the max-width */
+    background: url('../../assets/images/AdobeStock_297783683-1024x684.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centered background as per previous fix */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width/height */
+}
+
+.servicesMainTitle {
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+.serviceMainText {
+    width: 100%;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* Service Section Start */
+.serviceSection {
+    width: 78%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.servicePriceCardTitle {
+    margin: 20px 0;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 28px;
+    background: rgb(160, 244, 160);
+    color: rgb(9, 66, 9);
+    font-weight: 500;
+}
+
+/* Service Price Cards List Start */
+.servicePriceCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+    justify-content: center;
+}
+
+.servicePriceCard {
+    width: 100%;
+    max-width: 380px;
+    height: 312px;
+    border-radius: 10px;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.servicePriceCardImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.servicePriceCardInfo {
+    padding: 5px 10px;
+    background-color: rgba(245, 247, 246, 1);
+}
+
+.servicePriceCardName {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.servicePriceCardPara {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.servicePriceCardPriceTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicePriceCardPriceTagPara {
+    font-size: 16px;
+    color: #333;
+}
+
+.servicePriceCardPriceTagPara span {
+    color: rgba(0, 149, 78, 1);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.servicePriceCardPriceTagBtn {
+    color: rgba(0, 149, 78, 1);
+    border: 1px solid rgba(0, 149, 78, 1);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: white;
+    cursor: pointer;
+    font-size: 12px;
+    width: 75px;
+    height: 21px;
+}
+
+.servicePriceCardPriceTagBtn:hover {
+    background: darkgreen;
+    color: white;
+}
+
+/* Trusted Services Achievements Start */
+.trustedServicesAchievements {
+    margin-top: 0; /* Adjusted to control spacing above the section */
+    margin-bottom: -41px; /* Increased negative margin to close the remaining gap */
+    background: linear-gradient(180deg, #7ED956 0%, #B2D0A6 100%);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.trustedServicesContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.trustedServicesText {
+    color: #fff;
+    width: 45%;
+}
+
+.trustedServicesTitle {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.trustedServicesImage {
+    position: relative;
+    overflow-x: hidden;
+    height: auto;
+    border-radius: 20px;
+}
+
+.trustedServicesImage img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.trustedServicesAchievementsContent {
+    width: 55%;
+    max-width: 600px;
+}
+
+.trustedServicesStats {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.statItem {
+    text-align: left;
+}
+
+.statNumber {
+    font-size: 56px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--cairo);
+}
+
+.statLabel {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.featuresList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featureRow {
+    display: flex;
+    gap: 20px;
+}
+
+.featureItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+}
+
+.featureIcon {
+    width: 48px;
+}
+
+.featureTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.2;
+    color: black;
+}
+
+.featureDescription {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: black;
+}
+
+.getStartedBtn {
+    background: #fff;
+    color: rgba(0, 149, 78, 1);
+    border: 1px solid rgba(0, 149, 78, 1);
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    width: 249px;
+    height: 53px;
+}
+
+.getStartedBtn:hover {
+    background: #E8F5E9;
+}
+
+/* Live Support Button */
+.liveSupport_btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.liveSupport_btn:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.3);
+}
+
+.liveSupport_img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 149, 78, 1);
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    top: auto;
+    left: auto;
+    z-index: 9999;
+    object-fit: contain;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.liveSupport_img:hover {
+    transform: scale(1.2);
+    background-color: rgba(0, 128, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .servicesHeaderBox {
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .servicesMainTitle {
+        font-size: 32px;
+        line-height: 48px;
+        padding-bottom: 15px;
+    }
+
+    .serviceMainText {
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .serviceSection {
+        width: 90%;
+        padding: 15px 0;
+    }
+
+    .servicePriceCardTitle {
+        font-size: 24px;
+        padding-left: 15px;
+    }
+
+    .servicePriceCards {
+        grid-template-columns: repeat(3, 1fr); /* Keep 3 columns at 1024px */
+        gap: 24px;
+    }
+
+    .servicePriceCard {
+        max-width: 100%;
+        height: 280px; /* Slightly smaller height */
+    }
+
+    .servicePriceCardImg {
+        height: 160px; /* Reduced image height */
+    }
+
+    .servicePriceCardName {
+        font-size: 20px;
+    }
+
+    .servicePriceCardPara {
+        font-size: 11px;
+    }
+
+    .servicePriceCardPriceTagPara {
+        font-size: 14px;
+    }
+
+    .servicePriceCardPriceTagBtn {
+        font-size: 11px;
+        width: 70px;
+        height: 20px;
+    }
+
+    .trustedServicesAchievements {
+        padding: 30px 20px;
+        margin-top: 0; /* Adjusted */
+        margin-bottom: -35px; /* Increased negative margin to close the remaining gap */
+    }
+
+    .trustedServicesContent {
+        gap: 40px;
+    }
+
+    .trustedServicesText {
+        width: 50%;
+    }
+
+    .trustedServicesTitle {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .trustedServicesImage img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .trustedServicesAchievementsContent {
+        width: 50%;
+    }
+
+    .trustedServicesStats {
+        gap: 30px;
+    }
+
+    .statItem {
+        margin-bottom: 30px;
+    }
+
+    .statNumber {
+        font-size: 40px;
+    }
+
+    .statLabel {
+        font-size: 12px;
+    }
+
+    .featuresList {
+        gap: 10px;
+    }
+
+    .featureRow {
+        gap: 15px;
+    }
+
+    .featureItem {
+        margin-top: 0;
+    }
+
+    .featureIcon {
+        width: 40px;
+    }
+
+    .featureTitle {
+        font-size: 20px;
+    }
+
+    .featureDescription {
+        font-size: 14px;
+    }
+
+    .getStartedBtn {
+        font-size: 16px;
+        width: 200px;
+        height: 45px;
+        padding: 8px 20px;
+    }
+
+    .liveSupport_img {
+        width: 28px;
+        height: 28px;
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicesHeaderBox {
+        padding: 20px 15px;
+    }
+
+    .servicesMainTitle {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .serviceMainText {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 400px;
+    }
+
+    .serviceSection {
+        width: 95%;
+    }
+
+    .servicePriceCardTitle {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .servicePriceCards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns at 768px for tablet view */
+        gap: 20px;
+    }
+
+    .servicePriceCard {
+        height: 260px;
+    }
+
+    .servicePriceCardImg {
+        height: 160px;
+    }
+
+    .servicePriceCardName {
+        font-size: 18px;
+    }
+
+    .servicePriceCardPara {
+        font-size: 10px;
+    }
+
+    .servicePriceCardPriceTagPara {
+        font-size: 13px;
+    }
+
+    .servicePriceCardPriceTagBtn {
+        font-size: 10px;
+        width: 65px;
+        height: 18px;
+    }
+
+    .trustedServicesAchievements {
+        padding: 20px 15px;
+        margin-top: 0; /* Adjusted */
+        margin-bottom: -30px; /* Increased negative margin to close the remaining gap */
+    }
+
+    .trustedServicesContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .trustedServicesText {
+        width: 100%;
+        text-align: center;
+    }
+
+    .trustedServicesTitle {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .trustedServicesImage img {
+        max-width: 400px;
+    }
+
+    .trustedServicesAchievementsContent {
+        width: 100%;
+    }
+
+    .trustedServicesStats {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .statItem {
+        margin-bottom: 20px;
+    }
+
+    .statNumber {
+        font-size: 32px;
+    }
+
+    .statLabel {
+        font-size: 11px;
+    }
+
+    .featuresList {
+        gap: 15px;
+    }
+
+    .featureRow {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .featureIcon {
+        width: 36px;
+    }
+
+    .featureTitle {
+        font-size: 18px;
+    }
+
+    .featureDescription {
+        font-size: 13px;
+    }
+
+    .getStartedBtn {
+        font-size: 14px;
+        width: 180px;
+        height: 40px;
+        padding: 6px 15px;
+    }
+
+    .liveSupport_img {
+        width: 26px;
+        height: 26px;
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .servicesHeaderBox {
+        padding: 15px 10px;
+    }
+
+    .servicesMainTitle {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+    .serviceMainText {
+        font-size: 12px;
+        line-height: 20px;
+        max-width: 300px;
+    }
+
+    .serviceSection {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .servicePriceCardTitle {
+        font-size: 18px;
+        padding-left: 8px;
+    }
+
+    .servicePriceCards {
+        grid-template-columns: 1fr; /* 1 column at 425px for mobile view */
+        gap: 15px;
+    }
+
+    .servicePriceCard {
+        height: 240px;
+    }
+
+    .servicePriceCardImg {
+        height: 140px;
+    }
+
+    .servicePriceCardName {
+        font-size: 16px;
+    }
+
+    .servicePriceCardPara {
+        font-size: 9px;
+    }
+
+    .servicePriceCardPriceTagPara {
+        font-size: 12px;
+    }
+
+    .servicePriceCardPriceTagBtn {
+        font-size: 9px;
+        width: 60px;
+        height: 16px;
+    }
+
+    .trustedServicesAchievements {
+        padding: 15px 10px;
+        margin-top: 0; /* Adjusted */
+        margin-bottom: -25px; /* Increased negative margin to close the remaining gap */
+    }
+
+    .trustedServicesTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .trustedServicesImage img {
+        max-width: 300px;
+    }
+
+    .trustedServicesStats {
+        gap: 15px;
+    }
+
+    .statItem {
+        margin-bottom: 15px;
+    }
+
+    .statNumber {
+        font-size: 28px;
+    }
+
+    .statLabel {
+        font-size: 10px;
+    }
+
+    .featuresList {
+        gap: 8px;
+    }
+
+    .featureRow {
+        gap: 15px;
+    }
+
+    .featureIcon {
+        width: 32px;
+    }
+
+    .featureTitle {
+        font-size: 16px;
+    }
+
+    .featureDescription {
+        font-size: 12px;
+    }
+
+    .getStartedBtn {
+        font-size: 12px;
+        width: 160px;
+        height: 36px;
+        padding: 5px 10px;
+    }
+
+    .liveSupport_img {
+        width: 24px;
+        height: 24px;
+        bottom: 30px;
+        right: 30px;
+    }
+}

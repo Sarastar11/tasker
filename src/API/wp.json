@@ -1,0 +1,1814 @@
+{
+	"info": {
+		"_postman_id": "f5a78410-0e70-45c5-8d92-c6116c896fc1",
+		"name": "TaskerGo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25865585"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "UserAuth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"displayName\": \"kero adel3\",\r\n  \"email\": \"adelkeroles9@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"confirmPassword\": \"12345678\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Account/Register"
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"email\": \"adelkeroles9@gmail.com\",\r\n\"password\": \"12345678\",\r\n\"fcmToken\": \"feQnS9t2RfOUGQTQwIMPOv:APA91bEuTIX5LTgiTjRBiSMupbUdrBb0_HfUbMsXXj9spytxZ-RA9rGTZuQzO_OPMSUs2KBjQnzjsJ_yVYH7UHB3p1J0EoyEsO4GJSHprG2lqn-wN2bfmx8\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Account/login"
+							},
+							"response": []
+						},
+						{
+							"name": "ForgetPassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Email",
+											"value": "adelkeroles9@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://tasker-001-site1.jtempurl.com/api/Account/forgetPassword"
+							},
+							"response": []
+						},
+						{
+							"name": "verfiyOtp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"adelkeroles9@gmail.com\",\r\n  \"otp\": \"677357\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://tasker-001-site1.jtempurl.com/api/Account/verfiyOtp"
+							},
+							"response": []
+						},
+						{
+							"name": "resetPassword",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"adelkeroles9@gmail.com\",\r\n  \"password\": \"123456789\",\r\n  \"confirmPassword\": \"123456789\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://tasker-001-site1.jtempurl.com/api/Account/resetPassword"
+							},
+							"response": []
+						},
+						{
+							"name": "user-info",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImZlNTY5NThhLTc1MjEtNGEwYi1hY2FmLTJhM2ZmNWZhMTgzZCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzAzNzYzNzYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.VBegvnFrG3jKpBxmOHlIUKCO5semDLpLK3pbjeJfUR0"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://tasker-001-site1.jtempurl.com/api/Account/user-info"
+							},
+							"response": []
+						},
+						{
+							"name": "user-status",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjFkMjg4MmEyLTI3OWMtNGU4YS04ZmIxLTljYzJhNTYxMWIxNyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0iLCJleHAiOjE3MzE0OTUzMzAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.i9W3JLO8c9NMO6uMzI1of0S3fBDLmqfJVVMKo1s-aJ8"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://tasker-001-site1.jtempurl.com/api/Account/status"
+							},
+							"response": []
+						},
+						{
+							"name": "update-lang",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "en-US",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://tasker-001-site1.jtempurl.com/api/Account/update-lang?Id=0adcfaf5-c306-469f-a5ee-e95ffea0ea3a",
+									"protocol": "https",
+									"host": [
+										"tasker-001-site1",
+										"jtempurl",
+										"com"
+									],
+									"path": [
+										"api",
+										"Account",
+										"update-lang"
+									],
+									"query": [
+										{
+											"key": "Id",
+											"value": "0adcfaf5-c306-469f-a5ee-e95ffea0ea3a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete-account",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjE0MDAwNzYxLTA1NGItNDFkYS05MTcyLTk5NjdhNWRkNGNjYiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMzEiLCJleHAiOjE3NDA1NjU1OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9._IK2r_k_dQiWpd6tsjiRNQgYmRWTW6LEFvx40BmDPq4"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text"
+									}
+								],
+								"url": "https://tasker-001-site1.jtempurl.com/api/Account/delete-account"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Services",
+					"item": [
+						{
+							"name": "getallservices",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text"
+									}
+								],
+								"url": "http://tasker-001-site1.jtempurl.com/api/Service/all-service"
+							},
+							"response": []
+						},
+						{
+							"name": "getservicebyid",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://tasker-001-site1.jtempurl.com/api/Service/get-service/12"
+							},
+							"response": []
+						},
+						{
+							"name": "search",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://tasker-001-site1.jtempurl.com/api/Service/Search?searchTerm=mon",
+									"protocol": "http",
+									"host": [
+										"tasker-001-site1",
+										"jtempurl",
+										"com"
+									],
+									"path": [
+										"api",
+										"Service",
+										"Search"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "mon"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Worker",
+					"item": [
+						{
+							"name": "create-worker",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhZGNmYWY1LWMzMDYtNDY5Zi1hNWVlLWU5NWZmZWEwZWEzYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMyIsImxhbmciOiJkZS1ERSIsImV4cCI6MTc0MTA3NzU5MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.01rhN5mqYA6-r-WBk8aXUsujkbsaB7lzbs5hpDdLec8"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "PhoneNumber",
+											"value": "01203732500",
+											"type": "text"
+										},
+										{
+											"key": "AccountHolder",
+											"value": "1234123412341234",
+											"type": "text"
+										},
+										{
+											"key": "IBAN",
+											"value": "DE121200003301377857",
+											"type": "text"
+										},
+										{
+											"key": "BankName",
+											"value": "masr bank",
+											"type": "text"
+										},
+										{
+											"key": "Street",
+											"value": "Brlien",
+											"type": "text"
+										},
+										{
+											"key": "City",
+											"value": "Berlin",
+											"type": "text"
+										},
+										{
+											"key": "ZipCode",
+											"value": "125458",
+											"type": "text"
+										},
+										{
+											"key": "FrontID",
+											"type": "file",
+											"src": "postman-cloud:///1eef6651-977b-4770-89c7-c0d2e4ffe0e7"
+										},
+										{
+											"key": "BackID",
+											"type": "file",
+											"src": "postman-cloud:///1eef6651-977b-4770-89c7-c0d2e4ffe0e7"
+										},
+										{
+											"key": "Selfie",
+											"type": "file",
+											"src": "postman-cloud:///1eef6651-977b-4770-89c7-c0d2e4ffe0e7"
+										},
+										{
+											"key": "TaxNumber",
+											"value": "25",
+											"type": "text"
+										},
+										{
+											"key": "WorkerServices",
+											"value": "\"Plumbing\", \"Electrical\"",
+											"type": "text"
+										},
+										{
+											"key": "WorkerLanguages",
+											"value": "[\"English\", \"German\"]",
+											"type": "text"
+										},
+										{
+											"key": "expertise",
+											"value": "asyut",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Worker/create-worker"
+							},
+							"response": []
+						},
+						{
+							"name": "get-worker-by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjFmMzYxNzEzLWU0MzQtNDExYS04MzNhLWI2ZTY0M2Q3NDMzNyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiYWRlbCBrZXJvbGVzIiwiZXhwIjoxNzM3Mjk1NjUyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.IGDCApD-OY4KkwQY_OSuQogiBZBsoE9fWK-TPiEnKho"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://tasker-001-site1.jtempurl.com/api/Worker/get-worker"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjcxOTgwMzhkLWQyNzUtNDNkNC1hMmVmLWI5ZjEyYmE5NTc0NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzU5ODI3MjEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.qgFVytbyo3_Zs9ZQw6TKlfHTC-bvJMTAvQ4qNpa5M2Q"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "PhoneNumber",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "AccountHolder",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "IBAN",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "BankName",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "Street",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "City",
+											"value": "asyut",
+											"type": "text"
+										},
+										{
+											"key": "ZipCode",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "FrontID",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "BackID",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "Selfie",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "TaxNumber",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "expertise",
+											"value": "asyut",
+											"type": "text"
+										},
+										{
+											"key": "WorkerServices",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "WorkerLanguages",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Worker/update-worker"
+							},
+							"response": []
+						},
+						{
+							"name": "upload-business-photos",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjcxOTgwMzhkLWQyNzUtNDNkNC1hMmVmLWI5ZjEyYmE5NTc0NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzUyOTM0MjIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.gAty9bAEt2BiFW-_IeEDegT1BOlCbEDyMFlxkwgtBqo"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "businessPhotos",
+											"type": "file",
+											"src": [
+												"postman-cloud:///1eef6651-977b-4770-89c7-c0d2e4ffe0e7",
+												"postman-cloud:///1ef5af4d-d3d5-4900-98dc-0629adfd71de"
+											]
+										}
+									]
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Worker/upload-business-photos"
+							},
+							"response": []
+						},
+						{
+							"name": "delete-photo",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjcxOTgwMzhkLWQyNzUtNDNkNC1hMmVmLWI5ZjEyYmE5NTc0NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzU5ODI3MjEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.qgFVytbyo3_Zs9ZQw6TKlfHTC-bvJMTAvQ4qNpa5M2Q"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "deletePhotoUrls",
+											"value": "http://tasker-001-site1.jtempurl.com/workerImages/38ef10c3-b060-4b62-a861-601c6315d02d.png",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://tasker-001-site1.jtempurl.com/api/Worker/delete-business-photos"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PlaceOrder",
+					"item": [
+						{
+							"name": "place-order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjMyYTllM2RhLTgwYTMtNGZiMS05Y2RjLTI2ZDhkOGVlMWJiOCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMyIsImxhbmciOiJkZS1ERSIsImV4cCI6MTc0MTExMDY4OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.HJB5OJdSsptpr8R1Yd0CSDa6JG0lGFgFEyOvnsX71A4"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"serviceId\": 2,\r\n  \"address\": \"Hanover, Germany\",\r\n  \"lat\": 52,376296926004635,\r\n  \"long\": 9.721,\r\n  \"details\": \"string\",\r\n  \"price\": 10,\r\n  \"choice\": \"remote\",\r\n  \"chooseTypeRequest\": \"As soon as possible\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/PlaceOrder/place-order"
+							},
+							"response": []
+						},
+						{
+							"name": "all-orders",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImI4OTBjYjFlLTM1NWQtNDdhMy04OWU0LWQ0NzE1ZTEwM2FlOSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvYWRlbGxsbDJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsIiwiZXhwIjoxNzM5NjExMTMxLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.UksmIKjE-PNSr-jkz99GaPo0Ks4xmuEu7vXoKbFQ7Ts"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://tasker-001-site1.jtempurl.com/api/PlaceOrder/all-orders?lat=52.5408339&lon=13.3578187",
+									"protocol": "http",
+									"host": [
+										"tasker-001-site1",
+										"jtempurl",
+										"com"
+									],
+									"path": [
+										"api",
+										"PlaceOrder",
+										"all-orders"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "52.5408339"
+										},
+										{
+											"key": "lon",
+											"value": "13.3578187"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "order-details",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://tasker-001-site1.jtempurl.com/api/PlaceOrder/order-details/662"
+							},
+							"response": []
+						},
+						{
+							"name": "order-details2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUyMzg2ZjMwLWI5YzgtNDA4Ny1hN2NkLTZhOGRkMmVlYjIwYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hZ2ViYTI3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gZ2ViYSIsImV4cCI6MTczODgzOTMyNSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.OW6otgm73ydvPuW9zzst6u8dI3I0SaQzkVuy6TvE8pA"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "https://tasker-001-site1.jtempurl.com/api/PlaceOrder/order-all-details/662"
+							},
+							"response": []
+						},
+						{
+							"name": "order-details-assigned-user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text"
+									}
+								],
+								"url": "http://localhost:5097/api/Offer/order-details-assigned-user/668"
+							},
+							"response": []
+						},
+						{
+							"name": "order-details-assigned-worker",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://tasker-001-site1.jtempurl.com/api/Offer/order-details-assigned-worker/139"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjNiNjBjZjZhLTBmMmEtNDFlNi1hYjg1LWEyYmFjY2M2NWU2NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMyIsImV4cCI6MTczOTAxMTA4MiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.aEcPpOk58P9oG_AlGLhcQHQ97EgTxuk-Bm2ZJo1_UM8"
+									}
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Price",
+										"value": "",
+										"type": "text"
+									},
+									{
+										"key": "chooseTime",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Price",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "ChooseTime",
+											"value": "2024-12-25 17:30:00.000",
+											"type": "text"
+										}
+									]
+								},
+								"url": "http://tasker-001-site1.jtempurl.com/api/PlaceOrder/update-order/664"
+							},
+							"response": []
+						},
+						{
+							"name": "upload-order-images",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Offer",
+					"item": [
+						{
+							"name": "all-offers",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUyMzg2ZjMwLWI5YzgtNDA4Ny1hN2NkLTZhOGRkMmVlYjIwYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hZ2ViYTI3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gZ2ViYSIsImV4cCI6MTc0MDIxNjMyNiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.a7eOgf3XA07PphIPeUrRuxUkQhoDWJ_UZ_HkSGtL2Ac"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": "https://tasker-001-site1.jtempurl.com/api/Offer/all-offers/177"
+							},
+							"response": []
+						},
+						{
+							"name": "add-offer",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhZGNmYWY1LWMzMDYtNDY5Zi1hNWVlLWU5NWZmZWEwZWEzYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMyIsImxhbmciOiJkZS1ERSIsImV4cCI6MTc0MTA3NzU5MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.01rhN5mqYA6-r-WBk8aXUsujkbsaB7lzbs5hpDdLec8"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "de-DE",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"orderId\": 756,\r\n  \"price\": 40,\r\n  \"note\": \"note\",\r\n  \"visitDate\": \"2025-12-26T18:30:00\",\r\n  \"lat\": 51.165691,\r\n  \"long\": 10.451526\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Offer/add-offer"
+							},
+							"response": []
+						},
+						{
+							"name": "update-complete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUyMzg2ZjMwLWI5YzgtNDA4Ny1hN2NkLTZhOGRkMmVlYjIwYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hZ2ViYTI3QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gZ2ViYSIsImV4cCI6MTczODUwOTM1NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.zqpaIrYnytjt6b740rxQdiYN7AgrYn_wSUFi9IeeeVM"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"url": "http://tasker-001-site1.jtempurl.com/api/Offer/update-order-status/538"
+							},
+							"response": []
+						},
+						{
+							"name": "manage-order",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijc2MzUyZDBkLTFkYTYtNGYwMy1hOGI0LTEyYjkxYTQ5ZjUxMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gYWJkdWxsYWgiLCJleHAiOjE3NDAzMDQ1NDAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.Z7M1aAKI5o1XmT_hl5yf0M6AbPsU22sW7XQLK1tnMyY"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"reason\": \"string123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:5097/api/Offer/manage-order/723"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "WorkerOrder",
+							"item": [
+								{
+									"name": "worker-orders-summary",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImZlOThhNGM1LTUxNTItNDRjNS1hMzA5LWE4ZTM0MGM0ZjFhYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGhhYmliIiwiZXhwIjoxNzM4MzI1MzM3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.3B1xdwtQPllasFtaXCWsOCtn0DPdttt9_Ap6UcpXBXc"
+											}
+										},
+										"method": "GET",
+										"header": [],
+										"url": "http://tasker-001-site1.jtempurl.com/api/Offer/worker-orders-summary"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "ClientOrder",
+							"item": [
+								{
+									"name": "worker-orders-summary-user",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": {
+												"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+											}
+										},
+										"method": "GET",
+										"header": [],
+										"url": "http://tasker-001-site1.jtempurl.com/api/Offer/my-orders-summary-user"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "create-payment-intent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"amount\": 127.2,\r\n  \"currency\": \"EUR\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Payment/create-payment-intent"
+							},
+							"response": []
+						},
+						{
+							"name": "update-order-status-payment",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"workerId\": \"52386f30-b9c8-4087-a7cd-6a8dd2eeb20c\",\r\n  \"newStatus\": \"In Progress\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://tasker-001-site1.jtempurl.com/api/Offer/update-order-status-payment/662"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"Tasker24@tasker24.de\",\r\n    \"password\": \"Mohamad1987\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/AccountAdmin/login"
+					},
+					"response": []
+				},
+				{
+					"name": "dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBjY2ZlYjJhLTdhYzUtNDM4Zi05MDcyLTdkOTQ1ZjE5ZjM3MyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNDc3NzI1MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.fKs8x-C9fEQ26ZYQ8svLDK6w51piIJwXnFFZMOUa7jo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Dashboard/dashboard-stats"
+					},
+					"response": []
+				},
+				{
+					"name": "update-worker-status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"Certified\",\r\n  \"message\": \"string\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/Worker/update-worker-status/dea2e1f7-1444-4ed5-991d-a1a48adfc88f"
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-workers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczODkxOTEzNiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.0U25UHeEYI35sNo34Z8r4mIT0lLzCoW9D7nl9va9MvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tasker-001-site1.jtempurl.com/get-all-workers?searchTerm=&sortOrder=newest",
+							"protocol": "https",
+							"host": [
+								"tasker-001-site1",
+								"jtempurl",
+								"com"
+							],
+							"path": [
+								"get-all-workers"
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": ""
+								},
+								{
+									"key": "sortOrder",
+									"value": "newest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTc0MDIxNDc1NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.z88dBHlPfQbCtoaO_GWxhtDLX5hvwR0wpCCWUgdzK58"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tasker-001-site1.jtempurl.com/api/Dashboard/get-all-users?searchTerm=&sortOrder=oldest",
+							"protocol": "http",
+							"host": [
+								"tasker-001-site1",
+								"jtempurl",
+								"com"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"get-all-users"
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": ""
+								},
+								{
+									"key": "sortOrder",
+									"value": "oldest"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactions-users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImxhbmciOiIiLCJleHAiOjE3NDEwNzgwNjgsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.vOwtpU6ed891nydSqkwIaJKnpJSVVv7RDaZFncSFnQI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/OrdersWithOffers/admin/all-orders"
+					},
+					"response": []
+				},
+				{
+					"name": "order-details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImxhbmciOiIiLCJleHAiOjE3NDEwNzgwNjgsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.vOwtpU6ed891nydSqkwIaJKnpJSVVv7RDaZFncSFnQI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/OrdersWithOffers/admin/order-details/450"
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIxYjZkYjcyLTAxMTgtNDhlOS05MzdlLTdiZWViZDE3MzJhZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiYWRtaW4xQHRhc2tlcjI0LmRlIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiQWRtaW4iLCJleHAiOjE3MzE0ODkwMDMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.nfEg6D1zXqRGVjQgV_AylDwN7bHzm9UV4jMfh7CXLjI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/Dashboard/get-all-admin"
+					},
+					"response": []
+				},
+				{
+					"name": "Money-transfers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczODU4ODI0NywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.6_mIuLLFHvWcKOn_Ev_Bdv5Kt12L7gFDSydLRZCLvW8"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tasker-001-site1.jtempurl.com/api/Dashboard/Money-transfers?search=",
+							"protocol": "https",
+							"host": [
+								"tasker-001-site1",
+								"jtempurl",
+								"com"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"Money-transfers"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-worker-by-id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBjY2ZlYjJhLTdhYzUtNDM4Zi05MDcyLTdkOTQ1ZjE5ZjM3MyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNjMyNjE4MywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.6PDDCI98G_mIMVLTLKbQmMZwF1NHeSXG95ZSEH96uiE"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/Dashboard/get-worker/7198038d-d275-43d4-a2ef-b9f12ba95744"
+					},
+					"response": []
+				},
+				{
+					"name": "all-amount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIxYjZkYjcyLTAxMTgtNDhlOS05MzdlLTdiZWViZDE3MzJhZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiYWRtaW4xQHRhc2tlcjI0LmRlIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiQWRtaW4iLCJleHAiOjE3MzM5MTA1MTEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.DsSDba4hdDcZBa290NUxrFV1l7Y9eFrLTOyhQfgQNIw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5097/api/Dashboard/all-amount"
+					},
+					"response": []
+				},
+				{
+					"name": "delete-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTc0MDIxNDc1NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.z88dBHlPfQbCtoaO_GWxhtDLX5hvwR0wpCCWUgdzK58"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Dashboard/delete-user/8700a6d2-bf8b-4a7e-ad9e-1cbf9654ed2a"
+					},
+					"response": []
+				},
+				{
+					"name": "completed-order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBjY2ZlYjJhLTdhYzUtNDM4Zi05MDcyLTdkOTQ1ZjE5ZjM3MyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNDc3NzI1MSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.fKs8x-C9fEQ26ZYQ8svLDK6w51piIJwXnFFZMOUa7jo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Dashboard/completed-orders"
+					},
+					"response": []
+				},
+				{
+					"name": "all-chats",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBjY2ZlYjJhLTdhYzUtNDM4Zi05MDcyLTdkOTQ1ZjE5ZjM3MyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNDUzMTczMywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.BwgqQesl8FopZgxPee9e71Q8TwLGkrmRQHTYl0uX-jI"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/conversations"
+					},
+					"response": []
+				},
+				{
+					"name": "chat-id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjIxYjZkYjcyLTAxMTgtNDhlOS05MzdlLTdiZWViZDE3MzJhZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiYWRtaW4xQHRhc2tlcjI0LmRlIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiQWRtaW4iLCJleHAiOjE3MzQwMDUxMjYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.JTGs3NuIzt3Ip8yajchCw_79z9GFoqvMDR5UhYCmNjQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/conversations/2"
+					},
+					"response": []
+				},
+				{
+					"name": "send-mail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNzI3NzQxNSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.piuDevHHwrUXUopVCuKvO04sEZvUuSw5Gc_WmZj-y0c"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"receiverId\": \"7198038d-d275-43d4-a2ef-b9f12ba95744\",\r\n  \"content\": \"new content\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/send-email"
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"displayName\": \"Tasker24\",\r\n  \"email\": \"Tasker24@tasker24.de\",\r\n  \"password\": \"Mohamad1987\",\r\n  \"confirmPassword\": \"Mohamad1987\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/AccountAdmin/register"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePaymentStatusToWorker",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBjY2ZlYjJhLTdhYzUtNDM4Zi05MDcyLTdkOTQ1ZjE5ZjM3MyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNjMyNjE4MywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.6PDDCI98G_mIMVLTLKbQmMZwF1NHeSXG95ZSEH96uiE"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://tasker-001-site1.jtempurl.com/api/Dashboard/UpdatePaymentStatusToWorker?orderId=189&status=pending",
+							"protocol": "https",
+							"host": [
+								"tasker-001-site1",
+								"jtempurl",
+								"com"
+							],
+							"path": [
+								"api",
+								"Dashboard",
+								"UpdatePaymentStatusToWorker"
+							],
+							"query": [
+								{
+									"key": "orderId",
+									"value": "189"
+								},
+								{
+									"key": "status",
+									"value": "pending"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-chats-room",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNjg2Mjc3OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.-HIkwvMAFhsJmweK4U_mD49n8x8jbAckOZPF02XmIcU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/ChatRoom/conversations"
+					},
+					"response": []
+				},
+				{
+					"name": "chat-room-id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImV4cCI6MTczNjg2Mjc3OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.-HIkwvMAFhsJmweK4U_mD49n8x8jbAckOZPF02XmIcU"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/ChatRoom/conversations/OrderRoom_318"
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-user-deleted",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU0ZjBjZDM1LWM5YjgtNGRjNS1iNmVmLTQ3Yzg3NzZhMjhlNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZW1haWxhZGRyZXNzIjoiVGFza2VyMjRAdGFza2VyMjQuZGUiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJUYXNrZXIyNCIsImxhbmciOiIiLCJleHAiOjE3NDA5MjA0NjMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.W9yQVSGLVf9YZSIiOhVrBM_eVGm1wV-zxoqZH0YJIfQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/Dashboard/deleted-users"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "deletenotification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEzZWY1YjBiLTdhNDAtNDU4ZC05NzM3LWVkNWFhZjQzMjRmZSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6IndvcmtlciAxIiwiZXhwIjoxNzM0NzAzMTM2LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.61dPEjol_0qmfyki0ICxVuRF8sFlwdkoRJ64hZPP7g0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Notifications/notifications/46"
+					},
+					"response": []
+				},
+				{
+					"name": "GetNotifications",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImUyNWVjMGJlLTU1NzQtNDY1NC1hMDllLTViZGQ2ZWEzMjViNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvYWRlbGxsbDJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMzIiLCJsYW5nIjoiZGUtREUiLCJleHAiOjE3NDA3NTA3MTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.cOf1rWa95vg_NjhqNmQqPaDd_sIDblqnNCbr4W6WtJI"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de-DE",
+								"type": "text"
+							}
+						],
+						"url": "https://tasker-001-site1.jtempurl.com/api/Notifications/notifications"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteallnotification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImUyMjlhMzMxLWQ0MTYtNDVlZi05NTVlLTk0NmQ3ODAyMTUxYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzA5OTc4NjQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.NgJ36pY4-tiW0coUHOzkTv_rrWO7mMUyvWYeV88yx4E"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Notifications/notifications"
+					},
+					"response": []
+				},
+				{
+					"name": "unread-count",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MjhmYmZkLTYxMTgtNDhhNS05Y2JlLTJjYTY1NTA5NTVlZiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJoZW1hYWJkdWxsYWg2QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6ImlicmFoaW0gQWJkdWxsYWggIiwiZXhwIjoxNzM5NTI0NDEzLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.hbAX5kCDc9DG7GipGgk1Ntg06MkuiXHw4Xk6Dh6puQk"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/Notifications/notifications/unread-count"
+					},
+					"response": []
+				},
+				{
+					"name": "mark-as-read",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImUyNWVjMGJlLTU1NzQtNDY1NC1hMDllLTViZGQ2ZWEzMjViNSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvYWRlbGxsbDJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMzIiLCJsYW5nIjoiZGUtREUiLCJleHAiOjE3NDA3NTA3MTYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.cOf1rWa95vg_NjhqNmQqPaDd_sIDblqnNCbr4W6WtJI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"notificationId\": 2522\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://tasker-001-site1.jtempurl.com/api/Notifications/notifications/mark-as-read"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "create-conversation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de-DE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"senderId\": \"bf623299-7eb1-4b77-950a-e0c0283f97ba\",\r\n  \"receiverId\": \"13ef5b0b-7a40-458d-9737-ed5aaf4324fe\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/create-conversation"
+					},
+					"response": []
+				},
+				{
+					"name": "send-message",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de-DE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"conversationId\": 9,\r\n  \"senderId\": \"bf623299-7eb1-4b77-950a-e0c0283f97ba\",\r\n  \"receiverId\": \"13ef5b0b-7a40-458d-9737-ed5aaf4324fe\",\r\n  \"content\": \"eng eng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/send-message"
+					},
+					"response": []
+				},
+				{
+					"name": "get-messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/get-messages/13"
+					},
+					"response": []
+				},
+				{
+					"name": "get-conversations",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjM2M2I5MmJhLTcwNjUtNDAzOS04NWEzLTJhYzk2Y2NkNTUzYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvYWRlbGxsbDJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2Vyb2xvcyBhZGVsIGgiLCJleHAiOjE3Mzc4OTY0NTMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.XaswgWNgCIXjLuXcgT7mRE70vExovDRoqVR6gbJdy54"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Chat/all"
+					},
+					"response": []
+				},
+				{
+					"name": "search-conversations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImJmNjIzMjk5LTdlYjEtNGI3Ny05NTBhLWUwYzAyODNmOTdiYSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzQ1Mjc3MjMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.PesbMhPAUPXIdxaPRK4b02ehmXp6OohjHhugjtzjaVs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tasker-001-site1.jtempurl.com/api/api/Chat/search-conversations?term=k",
+							"protocol": "https",
+							"host": [
+								"tasker-001-site1",
+								"jtempurl",
+								"com"
+							],
+							"path": [
+								"api",
+								"api",
+								"Chat",
+								"search-conversations"
+							],
+							"query": [
+								{
+									"key": "term",
+									"value": "k"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-chat-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://tasker-001-site1.jtempurl.com/api/PlaceOrder/order-detailss/139"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "get-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImUyMjlhMzMxLWQ0MTYtNDVlZi05NTVlLTk0NmQ3ODAyMTUxYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzEyMzI4MTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.Ro_K65zcy9yRL21F0otDZm3KTUA6bEyjU06861OHdkw"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://tasker-001-site1.jtempurl.com/api/Profile/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "update-profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjYwMjkzYzVhLTMxYTItNDEyMC1iNmE3LTczN2E1OTgyYmY2YyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2Vyb2xvcyBhZGVsIiwiZXhwIjoxNzM3NDYyNzczLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.ZUjhNXzn0WWG9HuUSOyFBPaRqNCJSQfmUpfH1LA6fdI"
+							}
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "DE-de",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "UserName",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ImageUrl",
+									"type": "file",
+									"src": "postman-cloud:///1eef6651-977b-4770-89c7-c0d2e4ffe0e7"
+								},
+								{
+									"key": "Gender",
+									"value": "male",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:5097/api/Profile/profile"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rate",
+			"item": [
+				{
+					"name": "rate-worker",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImI0ZTI0OGViLTUwOTItNDBjOS1iNDM3LThkMTZmNTZhZmQ5NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMzEiLCJleHAiOjE3NDA2NDY3MzYsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.KkD0oho2w8ZDEKD_X4vxknMIrPLDbcVqbkIx-oKX0nE"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de-DE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"workerId\": \"1d23b77d-e1f2-44db-a2b9-234b708928a5\",\r\n  \"rating\": 4,\r\n  \"comment\": \"good worker\",\r\n  \"serviceId\": 56\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5097/api/Rate/rate-worker"
+					},
+					"response": []
+				},
+				{
+					"name": "rate-client",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjM2M2I5MmJhLTcwNjUtNDAzOS04NWEzLTJhYzk2Y2NkNTUzYyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvYWRlbGxsbDJAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2Vyb2xvcyBhZGVsIGgiLCJleHAiOjE3Mzc4OTg3ODAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.aPzFwjkXOSRw5orSr857Kj5wJoHfbh-Guf2UTs09_EY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"clientId\": \"3b587013-683a-4b6a-bf3b-0c0f26152ff9\",\r\n  \"rating\": 4,\r\n  \"comment\": \"good client\",\r\n  \"serviceId\": 408\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/Rate/rate-client"
+					},
+					"response": []
+				},
+				{
+					"name": "average-rating",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIyZDgyYzA0LTEzYTgtNGY4MC1iNzE0LTgxMGMwYTMxMjVlNCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJraC5tb2hhbWFkODdAaG90bWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJraGF0aWIgIiwiZXhwIjoxNzM3Mjg1NzE3LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MDA0LyIsImF1ZCI6Ik15U2VjdXJlVXNlcnMifQ.aV2yE9KyVyYjdLG9HFjK8tqEw9-0a1vltZHBUIX_yGA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5097/api/Rate/average-rating/b2d82c04-13a8-4f80-b714-810c0a3125e4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "QnA",
+			"item": [
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "de-DE",
+								"type": "text"
+							}
+						],
+						"url": "http://tasker-001-site1.jtempurl.com/api/QnA/questions"
+					},
+					"response": []
+				},
+				{
+					"name": "ask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImI0ZTI0OGViLTUwOTItNDBjOS1iNDM3LThkMTZmNTZhZmQ5NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2VybyBhZGVsMzEiLCJsYW5nIjoiZGUtREUiLCJleHAiOjE3NDA3MzkyMDMsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.Z-s5GuAEpMeYwXhUOjVx_QzWShS_ItX6PlL2QmZA4hU"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"question\": \"How do I register123?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5097/api/QnA/ask"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ChatRoom",
+			"item": [
+				{
+					"name": "SendMessage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjcxOTgwMzhkLWQyNzUtNDNkNC1hMmVmLWI5ZjEyYmE5NTc0NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJrZXJvbG9zaGFiaWIxMUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9naXZlbm5hbWUiOiJrZXJvbG9zIGFkZWwiLCJleHAiOjE3MzYyNDU4MTgsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcwMDQvIiwiYXVkIjoiTXlTZWN1cmVVc2VycyJ9.2SOnVxtu14xBEKXcuhs84DGWkhe4X5ml6m5xwVT-pKY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"roomName\": \"OrderRoom_177\",\r\n  \"messageContent\": \"string123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://tasker-001-site1.jtempurl.com/api/ChatRoom/send-message"
+					},
+					"response": []
+				},
+				{
+					"name": "GetMessage",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImViMTMwOWRjLWMzYzQtNGEwOS1iNGM1LWQ4NzMzYTRlMDVkMSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJhZGVsa2Vyb2xlczlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoia2Vyb2xvcyBoYWJpYiIsImV4cCI6MTczNjA2OTYxNSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwNC8iLCJhdWQiOiJNeVNlY3VyZVVzZXJzIn0.oPTKIczyviZDKAsqxPUtEBUlkrI4sLxFvEck5JuwiN4"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5097/api/ChatRoom/get-messages?roomid=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5097",
+							"path": [
+								"api",
+								"ChatRoom",
+								"get-messages"
+							],
+							"query": [
+								{
+									"key": "roomid",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "test-chat",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

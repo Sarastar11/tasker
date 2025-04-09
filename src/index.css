@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=M+PLUS+Rounded+1c&family=Madimi+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=M+PLUS+Rounded+1c&family=Madimi+One&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root {
+  --greenFont: rgba(0, 112, 58, 1);
+   --greenBar: rgba(230, 248, 239, 1);
+   --grey: rgba(137, 137, 137, 1);
+   --cairo :  "Cairo", sans-serif;
+   --inter : 'Inter', sans-serif;
+   --padding:  50px 202px 50px 202px;
+}
+/*  */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Cairo", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+}
+

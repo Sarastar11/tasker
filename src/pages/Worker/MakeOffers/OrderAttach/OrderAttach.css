@@ -1,0 +1,17 @@
+.OrderAttach {
+  display: flex;
+  gap: 15px;
+  .attachment {
+    display: flex;
+    gap: 13px;
+    .singleCard {
+      border-radius: 3.34px;
+      height: 90px;
+      width: 120px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+.footer_container {
+    padding: 40px 80px 24px 80px;
+    background: #282828;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.footer_logo_img {
+    width: 107px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.footer_contacts {
+    width: 323px;
+}
+
+.footer_contact_head {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contact_number,
+.contact_text,
+.contact_email,
+.footer_link {
+    color: #A5B6BD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+.footer_links,
+.footer_social_links {
+    margin: 0 0 0 50px;
+    flex: 1;
+    display: flex; /* Ensure flex context for centering */
+    flex-direction: column;
+    align-items: center; /* Center children (like social_icons) horizontally */
+}
+
+.footer_links_list {
+    list-style: none;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.footer_link {
+    margin: 40px 0;
+    text-decoration: none;
+}
+
+.app_imgGallery {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.social_icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Vertically align icons */
+    gap: 20px; /* Suitable spacing between icons */
+    width: 100%; /* Take full width of parent */
+    max-width: 280px; /* Match approximate width of app_imgGallery */
+}
+
+.app_img {
+    width: 130px; /* Default width for larger screens */
+    height: auto;
+}
+
+.social_icon {
+    width: 24px; /* Consistent width for all icons */
+    height: auto;
+    filter: brightness(0) invert(1); /* Make the black icon white */
+}
+
+.footer_copyright {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer_links_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .footer_container {
+        padding: 30px 40px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer_contacts {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer_logo_img {
+        width: 90px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .footer_links_wrapper {
+        width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .footer_links,
+    .footer_social_links {
+        margin: 0;
+        width: calc(50% - 15px);
+        text-align: center; /* Ensure text alignment is centered */
+        align-items: center; /* Keep centering for children */
+    }
+
+    .footer_links:nth-child(1),
+    .footer_links:nth-child(2) {
+        margin-bottom: 30px;
+    }
+
+    .footer_links:nth-child(3),
+    .footer_social_links {
+        margin-bottom: 0;
+    }
+
+    .footer_links_list {
+        align-items: center; /* Center list items */
+    }
+
+    .footer_link {
+        margin: 15px 0;
+    }
+
+    .app_imgGallery {
+        justify-content: center; /* Center app images for consistency */
+        gap: 15px;
+    }
+
+    .social_icons {
+        justify-content: center; /* Explicitly center icons */
+        gap: 18px; /* Slightly smaller gap */
+        max-width: 255px; /* Adjusted for 120px app images + 15px gap */
+    }
+
+    .app_img {
+        width: 120px;
+        height: auto;
+    }
+
+    .social_icon {
+        width: 22px; /* Slightly smaller for tablet screens */
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .footer_contact_head {
+        font-size: 20px;
+    }
+
+    .contact_number,
+    .contact_text,
+    .contact_email,
+    .footer_link {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_container {
+        padding: 20px 30px;
+    }
+
+    .footer_logo_img {
+        width: 80px;
+    }
+
+    .footer_contact_head {
+        font-size: 18px;
+    }
+
+    .contact_number,
+    .contact_text,
+    .contact_email,
+    .footer_link {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 12px 0;
+    }
+
+    .footer_links_wrapper {
+        gap: 20px;
+    }
+
+    .footer_links,
+    .footer_social_links {
+        width: 100%;
+        text-align: center;
+        align-items: center; /* Keep centering */
+    }
+
+    .footer_links:nth-child(1),
+    .footer_links:nth-child(2),
+    .footer_links:nth-child(3),
+    .footer_social_links {
+        margin-bottom: 20px;
+    }
+
+    .footer_links_list {
+        align-items: center;
+    }
+
+    .footer_link {
+        margin: 12px 0;
+    }
+
+    .app_imgGallery {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        gap: 15px; /* Smaller gap for mobile */
+        max-width: 210px; /* Adjusted for 100px app images + 10px gap */
+    }
+
+    .app_img {
+        width: 100px;
+    }
+
+    .social_icon {
+        width: 20px; /* Slightly smaller for mobile screens */
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .footer_copyright {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer_container {
+        padding: 15px 20px;
+    }
+
+    .footer_logo_img {
+        width: 70px;
+    }
+
+    .footer_contact_head {
+        font-size: 16px;
+    }
+
+    .contact_number,
+    .contact_text,
+    .contact_email,
+    .footer_link {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 10px 0;
+    }
+
+    .footer_links_wrapper {
+        gap: 15px;
+    }
+
+    .footer_links,
+    .footer_social_links {
+        margin-bottom: 15px;
+        align-items: center; /* Keep centering */
+    }
+
+    .footer_link {
+        margin: 10px 0;
+    }
+
+    .app_imgGallery {
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        gap: 12px; /* Even smaller gap */
+        max-width: 198px; /* Adjusted for 90px app images + 8px gap */
+    }
+
+    .app_img {
+        width: 90px;
+    }
+
+    .social_icon {
+        width: 18px; /* Slightly smaller for smaller mobile screens */
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .footer_copyright {
+        font-size: 10px;
+    }
+}

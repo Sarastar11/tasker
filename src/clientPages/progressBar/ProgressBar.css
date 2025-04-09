@@ -1,0 +1,31 @@
+a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none !important; 
+    color: rgba(137, 137, 137, 1) !important; 
+  }
+  
+  .custom-breadcrumb:hover {
+    color: rgba(100, 100, 100, 1) !important;
+  }
+  ol.breadcrumb {
+    display: flex;
+    align-items: center;
+   
+  }
+  .breadcrumb-separator {
+    font-size: 24px; 
+    
+    color: gray; 
+    padding: 0 8px 0 0; 
+  }
+  .custom-breadcrumb{
+    font-family: "Inter", sans-serif;
+  }
+  @media screen and (min-width: 1440px) {   
+    .house{
+      margin-left: 160px;
+    } 
+    
+  }
+  

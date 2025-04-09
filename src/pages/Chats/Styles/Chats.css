@@ -1,0 +1,83 @@
+.Chats {
+  padding-block: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .msgs {
+    display: flex;
+    gap: 24px;
+    .totalMsgs {
+      background-color: #f4f4f4;
+      padding-block: 16px;
+      border-radius: 12px;
+      width: 400px;
+      height: 788px;
+      .srh {
+        padding: 8px 16px;
+        input {
+          padding: 8px 16px;
+          width: 100%;
+          border-radius: 24px;
+          border: none;
+        }
+      }
+      .chatList {
+        display: flex;
+        padding: 16px;
+        gap: 16px;
+        cursor: pointer;
+        .content {
+          h3 {
+            font-size: 12px;
+            font-weight: 700;
+            color: #1f2024;
+          }
+          p {
+            color: #71727a;
+            font-size: 12px;
+          }
+        }
+        .time {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          .badge {
+            background-color: #e4914a;
+            padding: 6px;
+            width: 24px;
+            height: 24px;
+            border-radius: 20px;
+          }
+          .hours {
+            color: #bcbcbc;
+            font-size: 8px;
+          }
+        }
+      }
+    }
+
+    .chat {
+      background-color: #e6f8ef;
+      border-radius: 12px;
+      padding: 16px 24px;
+      width: 701px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .attach {
+        padding: 8px;
+        width: 16px;
+        height: 16px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #fff;
+      }
+    }
+  }
+  
+}

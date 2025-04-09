@@ -1,0 +1,60 @@
+.WorkerOffer {
+  gap: 16px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      label {
+        font-size: 20px;
+        color: #282828;
+      }
+      input {
+        padding: 12px 16px;
+        border: 1px solid #e8e7ea;
+        border-radius: 8px;
+      }
+    }
+    .date-time {
+      flex-direction: row;
+      gap: 16px;
+      .date,
+      .time {
+        width: 50%;
+      }
+    }
+    .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 10px;
+      button {
+        width: 370px;
+        padding: 12px 24px;
+        border: 1px solid #00954e;
+        border-radius: 6px;
+        transition: 1s background, 1s color;
+      }
+      .chat {
+        background-color: transparent;
+        color: #00954e;
+
+        &:hover {
+          background-color: #00954e;
+          color: #fff;
+        }
+      }
+      .offer {
+        background-color: #00954e;
+        color: #fff;
+        &:hover {
+          background-color: transparent;
+          color: #00954e;
+        }
+      }
+    }
+  }
+}

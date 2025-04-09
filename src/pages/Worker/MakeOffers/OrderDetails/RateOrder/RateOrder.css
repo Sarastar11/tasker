@@ -1,0 +1,85 @@
+.rateOrder {
+  .btn {
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    transition: 1s color, 1s border, 1s background-color;
+    &:hover {
+      color: #00703a;
+      background-color: transparent;
+      border: 1px solid #00703a;
+    }
+  }
+}
+
+.modal-content {
+  width: 600px !important;
+}
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sent {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 599px;
+    height: 432px;
+    border-radius: 20px;
+    background-color: #fff;
+    .offer {
+      width: 551px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #282828;
+        font-family: "Cairo";
+      }
+      p {
+        font-family: "Cairo";
+        font-weight: 700;
+        color: #6f7485;
+      }
+    }
+    .comment {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      label {
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 20px;
+        color: #282828;
+      }
+      textarea {
+        border: 1px solid #e8e7ea;
+      }
+    }
+    .button {
+      button {
+        width: 216px !important;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 20px;
+        transition: 1s color, 1s border, 1s background-color;
+        background-color: #00703a;
+        color: #eaeaea;
+        &:hover {
+          color: #00703a;
+          background-color: transparent;
+          border: 1px solid #00703a;
+        }
+      }
+    }
+  }
+}

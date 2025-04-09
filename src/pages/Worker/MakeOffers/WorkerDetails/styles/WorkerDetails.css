@@ -1,0 +1,106 @@
+WorkerDetails {
+  .details {
+    display: flex;
+
+    gap: 16px;
+    img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+    }
+  }
+  .rating {
+    div {
+      p {
+        color: #000929;
+        opacity: 50%;
+      }
+    }
+  }
+
+  /* .successfully {
+    position: absolute;
+    z-index: 99;
+    left: -5px;
+    width: 1350px;
+    height: 100vh;
+    background-color: #2828286f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sent {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 599px;
+      height: 432px;
+      border-radius: 20px;
+      background-color: #fff;
+      .offer {
+        img {
+          width: 88px;
+          height: 88px;
+          display: block;
+          margin: auto;
+        }
+        h2 {
+          font-size: 20px;
+          font-weight: 700;
+          color: #282828;
+          font-family: "Cairo";
+        }
+        p {
+          font-family: "Cairo";
+          font-weight: 700;
+          color: #6f7485;
+        }
+      }
+      .buttons {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        button {
+          width: 216px;
+          border-radius: 6px;
+          padding: 8px 12px;
+          border: 1px solid #eaeaea;
+          color: #00703a;
+          font-size: 20px;
+          transition: 1s color, 1s border, 1s background-color;
+          &:hover {
+            background-color: #00703a;
+            color: #eaeaea;
+            border: #00703a;
+          }
+        }
+      }
+    }
+  } */
+}
+
+.modal-content {
+  overflow-y: scroll !important;
+  width: 776px !important;
+  height: 640px !important;
+}
+.modal-header {
+  flex-direction: column-reverse !important;
+  align-items: baseline !important;
+  .Workerinfo {
+    width: 100%;
+    .data {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 163px;
+        height: 100%;
+        border-radius: 16px;
+      }
+    }
+  }
+}

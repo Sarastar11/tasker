@@ -1,0 +1,32 @@
+.OfferAccepted {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #e9ebf8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    div {
+      display: flex;
+      justify-content: space-between;
+      h3,
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        color: #193823;
+      }
+    }
+    hr {
+      border: 1px solid #00000099;
+    }
+    .total {
+      h3,
+      p {
+        font-weight: 700;
+      }
+    }
+  }
+}

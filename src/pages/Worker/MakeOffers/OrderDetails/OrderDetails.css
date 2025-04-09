@@ -1,0 +1,45 @@
+.statusDetails {
+  button {
+    text-transform: capitalize;
+    background-color: transparent;
+    padding: 4px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 1s background, 1s color;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+.pending {
+  button {
+    border: 1px solid #ff9720;
+    color: #ff8800;
+    &:hover {
+      background-color: #ff8800;
+    }
+  }
+}
+
+.completed {
+  button {
+    border: 1px solid #0f9918;
+    color: #0f9918;
+    &:hover {
+      background-color: #0f9918;
+    }
+  }
+}
+.inprogress {
+  button {
+    border: 1px solid #957bf9;
+    color: #957bf9;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 1s background, 1s color;
+    &:hover {
+      background-color: #957bf9;
+    }
+  }
+}

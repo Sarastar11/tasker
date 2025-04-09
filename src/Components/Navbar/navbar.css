@@ -1,0 +1,103 @@
+.search-bar {
+  width: 466px;
+}
+
+.search-bar input {
+  border-radius: 8px;
+  padding: 8px 15px 8px 40px;
+  background-image: url(../assets/icons/search.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #198754 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #198754 !important;
+}
+
+.position-relative {
+  display: inline-block;
+}
+
+.position-absolute {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 50%;
+}
+
+/* notifications.................. */
+.notification-icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  background-color: red !important;
+  color: white;
+  font-size: 6px;
+  padding: 2px 3px;
+  border-radius: 50%;
+  min-width: 10px;
+  height: 10px;
+  text-align: center;
+}
+/* profile details  */
+.drop {
+  font-family: "Cairo";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+  span {
+    color: #28282899;
+  }
+}
+hr {
+  border: 1.5px solid #d9d9d9;
+  margin: 0;
+}
+.btn.show,
+.btn.show:hover {
+  border: none !important;
+}
+.dropdown-toggle::after {
+  display: none !important; /* Hides the arrow */
+}
+
+/* languages dropdown */
+.custom-dropdown .dropdown-menu {
+  width: 44px !important; /* Adjust width as needed */
+}
+.language {
+  display: flex;
+  gap: 2px;
+  span {
+    width: fit-content;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100%;
+  }
+}
