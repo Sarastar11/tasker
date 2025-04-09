@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import RegisterStyles from "./register.module.css";
-import MainLogo from "../../assets/images/Logo_Tasker.PNG";
+import MainLogo from "../../assets/images/Logo_Tasker.png";
 import GoogleIcon from "../../assets/icons/Social Icons/Google/Original.svg";
 import LoginLogo from "../../assets/images/image 18.png";
 import DividerText from "../../assets/icons/Divider Text.png";
