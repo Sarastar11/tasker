@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Form, InputGroup, Dropdown } from "react-bootstrap";
 import { FaChevronDown } from "react-icons/fa";
-import countriesData from "../../MainPages/data/countryData";
+// import countriesData from "../../MainPages/data/countryData";
 
 const PhoneNumberInput = () => {
   const [countries, setCountries] = useState([]);
